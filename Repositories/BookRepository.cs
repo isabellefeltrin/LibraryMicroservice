@@ -2,11 +2,11 @@
 
 namespace Biblioteca.Repositories;
 
-using Biblioteca.Model;
+using Library.Model;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Data.Sqlite;
-
+using Biblioteca.Data;
 
 public class BookRepository
     {

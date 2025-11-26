@@ -1,16 +1,16 @@
-﻿using Book.Model;
+﻿
+using Library.Model;
 using Microsoft.EntityFrameworkCore;
-using System;
 
-namespace LibraryMicroservice.Banco
-
+namespace Biblioteca.Data
 {
-    public class DataContext : DbContext
+    public class AppDbContext : DbContext
     {
-                public DataContext(DbContextOptions<DataContext> options) : base(options)
-    {
-    }
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
 
-    public DbSet<BookModel> BookModel { get; set; }
-}
+        public DbSet<BookModel> Books { get; set; }
+    }
 }
